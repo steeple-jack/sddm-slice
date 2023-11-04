@@ -3,7 +3,7 @@
 
   outputs = { self, nixpkgs }: {
     
-    nixosModules.sddm-slice =
+    defaultPackage.x86_64-linux =
       with import nixpkgs { system = "x86_64-linux"; };
       stdenv.mkDerivation {
 	pname = "sddm-slice";
